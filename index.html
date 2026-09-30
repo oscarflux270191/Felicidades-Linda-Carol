@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para la Dra. Carolina Díaz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#140e0a;--ink:#f4e8d2;--dim:#c2b193;--amber:#f0c36a;--rust:#c2603a;--paper:#efe3cc;--pink:#2a1d14;--line:rgba(244,232,210,.16);--ease:cubic-bezier(.2,.7,.1,1);
+--serif:"Instrument Serif",Georgia,"Times New Roman",serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0}
+html{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{overflow-x:hidden}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.lb{font:500 10px/1.4 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+/* HERO */
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;padding:0 clamp(16px,4vw,56px)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,10,.9) 0%,rgba(20,14,10,.62) 40%,rgba(20,14,10,0) 68%),linear-gradient(0deg,rgba(20,14,10,.85) 0%,rgba(20,14,10,0) 34%)}
+.nav{position:relative;padding-right:170px;z-index:2;display:flex;justify-content:space-between;align-items:center;padding-top:26px}
+.mark{font:600 13px var(--sans);letter-spacing:.2em}
+.mark i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--amber);margin-right:10px;box-shadow:0 0 14px var(--amber)}
+.copy{position:absolute;z-index:2;left:clamp(16px,4vw,56px);top:50%;transform:translateY(-46%);max-width:560px}
+.copy .lb{display:flex;align-items:center;gap:12px;color:var(--amber)}
+.copy .lb:before{content:"";width:28px;height:1px;background:var(--amber)}
+h1{font:400 clamp(48px,6.4vw,100px)/.94 var(--serif);margin:22px 0 22px;letter-spacing:-.01em}
+h1 em{color:var(--amber)}
+.lede{font-size:16px;line-height:1.65;color:#e6d8bd;max-width:460px}
+.strip{position:absolute;z-index:2;left:clamp(16px,4vw,56px);right:clamp(16px,4vw,56px);bottom:24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.strip .sn{font:italic 22px var(--serif);color:var(--ink)}
+button.pill{font:500 11px var(--mono);letter-spacing:.14em;color:var(--ink);background:rgba(244,232,210,.1);border:1px solid var(--line);backdrop-filter:blur(10px);padding:11px 18px;border-radius:99px;cursor:pointer}
+.rv{opacity:0;transform:translateY(18px);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
+.is-revealed .rv{opacity:1;transform:none;filter:none}
+.copy.rv{transform:translateY(-40%)}.is-revealed .copy.rv{transform:translateY(-46%)}
+.snd{position:fixed;top:16px;right:16px;z-index:50;display:flex;align-items:center;gap:9px;font:500 10px var(--mono);letter-spacing:.14em;color:var(--ink);background:rgba(20,14,10,.55);border:1px solid var(--line);backdrop-filter:blur(10px);padding:10px 16px;border-radius:99px;cursor:pointer}
+.snd svg{width:16px;height:16px}.snd .wv{opacity:0}.snd.on .wv{opacity:1}
+/* SECCIONES */
+section{position:relative;padding:clamp(80px,12vw,160px) clamp(16px,4vw,56px)}
+.sc{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--d,0)*110ms)}
+.sc.in{opacity:1;transform:none}
+.notes{background:linear-gradient(180deg,var(--bg),#1b120c 220px);border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+h2{font:400 clamp(38px,5vw,76px)/1 var(--serif);letter-spacing:-.01em}
+.head p{font-size:16px;line-height:1.7;color:var(--dim);max-width:460px}
+.bento{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px}
+.card{border-radius:22px;padding:28px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:250px;overflow:hidden}
+.card.dk{background:#0d0906;box-shadow:0 30px 60px -30px #000}
+.card.lt{background:var(--paper);color:var(--pink);border-color:transparent}
+.card.lt .lb{color:#7a5e3f}
+.c1{grid-row:span 2}.c4{grid-column:span 2}
+.big{font:400 clamp(44px,5.4vw,88px)/.92 var(--serif)}.big em{color:var(--amber)}
+.phr{font:400 clamp(24px,2.5vw,34px)/1.15 var(--serif)}
+.cap{font-size:13px;color:var(--dim);line-height:1.6}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font:500 10px var(--mono);letter-spacing:.14em;border:1px solid rgba(42,29,20,.3);padding:7px 12px;border-radius:99px}
+svg .dr{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease) .3s}
+.in svg .dr,svg.in .dr{stroke-dashoffset:0}
+svg .pt{opacity:0;transition:opacity .8s 2s}.in svg .pt{opacity:1}
+/* PERSONAL */
+.who{background:linear-gradient(180deg,#1b120c,#2a190e 60%,#1d1209);text-align:center}
+.who h2{font-size:clamp(44px,7vw,112px);max-width:14ch;margin:0 auto 90px;line-height:.96}
+.fl{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1080px;margin:0 auto;text-align:left}
+.n{padding:26px;border:1px solid rgba(240,195,106,.22);border-radius:18px;background:rgba(244,232,210,.04);min-height:190px;display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.n:nth-child(3n+2){margin-top:44px}.n:nth-child(3n){margin-top:16px}
+.n:nth-child(even){transform:rotate(.6deg)}
+.n svg{width:34px;height:34px;stroke:var(--amber);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.n p{font:400 24px/1.2 var(--serif)}
+.quiet{font:italic clamp(24px,3vw,40px)/1.3 var(--serif);color:var(--dim);max-width:24em;margin:120px auto 0}
+.thx{background:#120b07;text-align:center;padding-block:clamp(120px,18vw,240px)}
+.thx h2{font-size:clamp(40px,6vw,92px);max-width:16ch;margin:0 auto 140px;line-height:.98}
+.ln{font:400 clamp(24px,2.6vw,36px)/1.35 var(--serif);max-width:22em;margin:0 auto 70px;color:#e6d8bd}
+.key{font:400 clamp(34px,5vw,72px)/1.08 var(--serif);max-width:15em;margin:130px auto 0}
+.key em{color:var(--amber)}
+/* LUCES */
+.lights{padding:0;height:clamp(420px,70vw,760px);background:radial-gradient(60% 60% at 50% 70%,#2a1a0d,#0c0805)}
+.lights svg{position:absolute;inset:0;width:100%;height:100%}
+.br{fill:none;stroke:#4a3321;stroke-linecap:round}.gl{filter:drop-shadow(0 0 4px #ffd77a)}
+.lt1{fill:#ffe9a8;opacity:0;transition:opacity 1.4s;transition-delay:calc(var(--d)*14ms)}
+.lights.in .lt1{opacity:.95}
+.lights.in .lt1.p{animation:pl 3.4s ease-in-out infinite;animation-delay:calc(var(--d)*37ms)}
+@keyframes pl{50%{opacity:.25}}
+/* FINAL */
+.end{min-height:150svh;background:#0c0805;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding-block:0 40px;overflow:hidden}
+.end:before{content:"";position:absolute;left:50%;top:38%;width:70vmin;height:70vmin;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(240,195,106,.16),transparent 62%);pointer-events:none}
+.fin{margin-top:24svh;position:relative;width:100%}
+.fin .a{display:block;font:400 clamp(30px,4vw,56px) var(--serif);color:var(--dim);margin-bottom:28px;opacity:0;filter:blur(8px);transition:opacity 2.4s var(--ease),filter 2.4s var(--ease)}
+.fin.in .a{opacity:1;filter:none}
+.wreath{--w:min(90vw,700px,86svh);position:relative;width:var(--w);height:var(--w);margin:0 auto}
+.wreath svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.wreath .b{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:72%;font:400 calc(var(--w)*.092)/1.06 var(--serif);text-align:center}
+.b .w{display:inline-block;white-space:nowrap}
+.b .l{display:inline-block;opacity:0;filter:blur(8px);transform:translateY(10px);transition:opacity 1.2s var(--ease),filter 1.2s var(--ease),transform 1.2s var(--ease);transition-delay:calc(4.4s + var(--i)*75ms)}
+.fin.in .l{opacity:1;filter:none;transform:none}
+.vn{fill:none;stroke:#6f8a45;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 4.2s linear 4.4s}
+.fin.in .vn{stroke-dashoffset:0}
+.lf{fill:#7f9b50;opacity:0;transition:opacity 1s var(--ease);transition-delay:calc(4.4s + var(--t)*4.2s + .3s)}
+.lf.bd{fill:#f0c36a}
+.fin.in .lf{opacity:.92}
+.sig{margin-top:40svh;font:italic 16px var(--serif);color:var(--dim);line-height:1.8}
+.sig b{display:block;font:400 22px var(--serif);color:var(--ink)}
+@media(max-width:900px){
+.nav .lb.x{display:none}
+.hero{display:flex;flex-direction:column;padding-top:0}
+.ov{background:linear-gradient(0deg,var(--bg) 22%,rgba(20,14,10,.55) 55%,rgba(20,14,10,0) 80%)}
+.copy{position:relative;left:auto;top:auto;transform:none!important;margin-top:auto;padding-bottom:70px;max-width:none}
+.strip{bottom:18px}.strip .lb{display:none}
+.head,.bento,.fl{grid-template-columns:1fr}.head{gap:20px}
+.c1,.c4{grid-row:auto;grid-column:auto}
+.n:nth-child(n){margin-top:0;transform:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv,.sc,.fin .a,.fin .l,.lf,.lt1{opacity:1!important;filter:none!important;transform:none!important}svg .dr{stroke-dashoffset:0}svg .pt{opacity:1}.vn{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-cat" viewBox="0 0 32 32"><path d="M6 25V8l6 5h8l6-5v17c0 3-4 4-10 4S6 28 6 25z"/><path d="M12 19h.1M20 19h.1M14 23l2 1 2-1"/></symbol>
+<symbol id="i-pen" viewBox="0 0 32 32"><path d="M6 27l2-7L22 6l4 4L12 24z"/><path d="M19 9l4 4"/></symbol>
+<symbol id="i-dino" viewBox="0 0 32 32"><path d="M3 24c5 0 5-6 9-9s6-6 11-5 5 4 3 6l-4 1 2 7h-4l-2-4h-6l-1 4H7l1-5c-2 2-4 3-5 5z"/><path d="M22 13h.1"/></symbol>
+<symbol id="i-walk" viewBox="0 0 32 32"><path d="M4 28c10-1 0-9 10-11s3-9 14-13" stroke-dasharray="2 3"/><circle cx="28" cy="4" r="1.5"/></symbol>
+<symbol id="i-plant" viewBox="0 0 32 32"><path d="M16 28V13M16 19C9 19 7 15 7 10c7 0 9 4 9 9zM16 15c5 0 8-3 8-8-5 0-8 3-8 8zM10 28h12"/></symbol>
+<symbol id="i-quote" viewBox="0 0 32 32"><path d="M5 20c0-6 2-9 6-10M6 20h5v6H6zM18 20c0-6 2-9 6-10M19 20h5v6h-5z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 32 32"><path d="M16 27C6 20 4 13 8 9s8-2 8 2c0-4 4-6 8-2s2 11-8 18z"/></symbol>
+<symbol id="i-smile" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="M11 18c2 4 8 4 10 0M12 12h.1M20 12h.1"/></symbol>
+<symbol id="i-hang" viewBox="0 0 32 32"><path d="M16 12a3 3 0 1 0-3-3M16 12v3L3 25h26L16 15"/></symbol>
+</defs></svg>
+
+<audio id="au" src="musica.mp3" preload="auto" loop></audio>
+<button class="snd" id="snd" type="button" aria-pressed="false" aria-label="Activar música"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/><path class="wv" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg><span id="sl">ACTIVAR MÚSICA</span></button>
+<header class="hero" id="hero">
+  <video id="v" src="video.mp4" muted playsinline preload="auto"></video>
+  <div class="ov"></div>
+  <nav class="nav rv" style="--d:0"><span class="mark"><i></i>UAZ</span><span class="lb x">Universidad Autónoma de Zacatecas</span></nav>
+  <div class="copy rv" style="--d:1">
+    <p class="lb">Reconocimiento</p>
+    <h1>Dra. Carolina <em>Díaz</em></h1>
+    <p class="lede">Mantener la triple acreditación de la Universidad Autónoma de Zacatecas es el resultado de mucho trabajo. Esta página existe para reconocer el tuyo.</p>
+  </div>
+  <div class="strip rv" style="--d:3"><span class="lb">Triple acreditación</span><span class="sn">Universidad Autónoma de Zacatecas</span><button class="pill" id="rp" type="button">VER DE NUEVO</button></div>
+</header>
+
+<section class="notes">
+  <div class="head sc"><h2>Detrás de un resultado hay personas</h2><p>Una acreditación se lee en un documento, pero se construye con meses de trabajo cuidadoso. El logro es de quien lo hizo posible.</p></div>
+  <div class="bento">
+    <article class="card dk c1 sc">
+      <p class="lb">Nota 01 · Logro</p>
+      <svg viewBox="0 0 300 200" fill="none" stroke="#f0c36a" stroke-width="1.5" stroke-linecap="round" style="width:100%;max-height:240px" aria-hidden="true"><path class="dr" pathLength="1" d="M40 190C90 170 60 130 120 110S200 90 150 40"/><circle class="pt" cx="150" cy="40" r="4" fill="#f0c36a"/><circle class="pt" cx="200" cy="62" r="4" fill="#f0c36a"/><circle class="pt" cx="105" cy="58" r="4" fill="#f0c36a"/></svg>
+      <div><p class="big">TRIPLE<br><em>ACREDITACIÓN</em></p><p class="cap" style="margin-top:14px">Un resultado que habla del trabajo que hubo detrás.</p></div>
+    </article>
+    <article class="card lt c2 sc" style="--d:1">
+      <p class="lb">Nota 02 · Dedicación</p>
+      <p class="phr">Las cosas importantes casi nunca ocurren de un día para otro.</p>
+      <div class="chips"><span>TRABAJO</span><span>CONSTANCIA</span><span>RESPONSABILIDAD</span></div>
+    </article>
+    <article class="card lt c3 sc" style="--d:2">
+      <p class="lb">Nota 03 · Carol</p>
+      <svg viewBox="0 0 32 32" fill="none" stroke="#2a1d14" stroke-width=".6" stroke-linecap="round" stroke-linejoin="round" style="width:100%;height:90px" aria-hidden="true"><path class="dr" pathLength="1" d="M3 24c5 0 5-6 9-9s6-6 11-5 5 4 3 6l-4 1 2 7h-4l-2-4h-6l-1 4H7l1-5c-2 2-4 3-5 5z"/><circle class="pt" cx="22.5" cy="13" r=".6" fill="#c2603a" stroke="none"/></svg>
+      <p class="phr">Porque un logro también lleva el nombre de un equipo que lo hizo posible.</p>
+    </article>
+    <article class="card lt c4 sc" style="--d:3">
+      <p class="lb">Nota 04 · Lo que queda</p>
+      <svg viewBox="0 0 600 70" fill="none" stroke="#6b7f3f" stroke-width="1.6" stroke-linecap="round" style="width:100%;height:70px" aria-hidden="true"><path class="dr" pathLength="1" d="M4 40C60 40 70 20 130 26S190 52 250 42S330 18 400 28S500 50 596 26"/><path class="dr" pathLength="1" d="M190 46c-2 10 10 14 14 6s-6-10-9-4M470 38c-2 10 10 14 14 6s-6-10-9-4"/><g class="pt" fill="#6b7f3f" stroke="none"><path transform="translate(58 34) rotate(-50)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(104 24) rotate(-70)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(150 32) rotate(60)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(228 46) rotate(50)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(292 30) rotate(-60)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(350 22) rotate(-30)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(410 34) rotate(55)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(520 42) rotate(-45)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/><path transform="translate(566 32) rotate(-60)" d="M0 0C6-9 16-9 20 0C14 8 6 8 0 0z"/></g><circle class="pt" cx="596" cy="26" r="3.5" fill="#c2603a" stroke="none"/></svg>
+      <p class="phr">Hay resultados que terminan en un documento. Otros permanecen en las personas.</p>
+    </article>
+  </div>
+</section>
+
+<section class="who">
+  <h2 class="sc">Por las cosas que te hacen ser tú</h2>
+  <div class="fl" id="fl">
+    <div class="n sc"><svg><use href="#i-smile"/></svg><p>Tu lindo sentido del humor.</p></div>
+    <div class="n sc"><svg><use href="#i-heart"/></svg><p>Tu forma de ayudar a las personas.</p></div>
+    <div class="n sc"><svg><use href="#i-quote"/></svg><p>Tu lenguaje extenso y esa manera tan tuya de expresar lo que piensas.</p></div>
+    <div class="n sc"><svg><use href="#i-hang"/></svg><p>La forma elegante en la que vistes.</p></div>
+    <div class="n sc"><svg><use href="#i-cat"/></svg><p>Tu gusto por los gatitos.</p></div>
+    <div class="n sc"><svg><use href="#i-pen"/></svg><p>Tu manera de mirar y pensar el arte.</p></div>
+    <div class="n sc"><svg><use href="#i-walk"/></svg><p>Tus ganas de caminar.</p></div>
+    <div class="n sc"><svg><use href="#i-dino"/></svg><p>La forma en que amas los dinosaurios.</p></div>
+    <div class="n sc"><svg><use href="#i-plant"/></svg><p>Y ese cariño con el que cuidas de tus plantas.</p></div>
+  </div>
+  <p class="quiet sc">Todas esas pequeñas cosas que quizá para ti son simplemente parte de quien eres, pero que para mí te hacen única.</p>
+</section>
+
+<section class="thx">
+  <h2 class="sc">Por todo lo que has dejado en mi vida</h2>
+  <p class="ln sc">Me dejaste las ganas de no seguir siendo la misma persona.</p>
+  <p class="ln sc">Las ganas de mejorar.<br>De aprender.<br>De crecer.</p>
+  <p class="ln sc">De convertirme en alguien que pueda ofrecerte un lugar seguro, donde puedas crecer con paz y tranquilidad.</p>
+  <p class="key sc">Lo esencial es invisible a los ojos; <em>solo con el corazón se puede ver bien.</em></p>
+</section>
+
+<section class="lights sc" id="lights"><svg id="tree" viewBox="0 0 800 500" preserveAspectRatio="xMidYMax meet" aria-hidden="true"></svg></section>
+
+<section class="end">
+  <div class="fin" id="fin"><span class="a">Y porque hoy...</span><div class="wreath"><svg id="wr" viewBox="0 0 600 600" aria-hidden="true"></svg><p class="b" id="fb">por hacer la diferencia en este mundo.</p></div></div>
+  <p class="sig">Para Carol.<br>Con admiración.</p>
+</section>
+
+<script>
+const REVEAL_AT = 3; // segundo del video en el que aparece la interfaz
+const hero = document.getElementById('hero'), v = document.getElementById('v');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let done = false;
+const reveal = () => { if (!done) { done = true; hero.classList.add('is-revealed'); } };
+v.addEventListener('timeupdate', () => { if (v.currentTime >= REVEAL_AT) reveal(); });
+['ended','error'].forEach(e => v.addEventListener(e, reveal));
+setTimeout(reveal, 9000);
+const start = () => {
+  if (reduce) { v.currentTime = v.duration || 0; reveal(); return; }
+  const p = v.play(); if (p && p.catch) p.catch(reveal);
+};
+v.readyState >= 2 ? start() : v.addEventListener('loadeddata', start, { once: true });
+document.getElementById('rp').onclick = () => { done = false; hero.classList.remove('is-revealed'); v.currentTime = 0; v.play().catch(reveal); };
+
+// Revelado al hacer scroll
+document.querySelectorAll('#fl .n').forEach((n, i) => n.style.setProperty('--d', i % 3));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .18 });
+document.querySelectorAll('.sc').forEach(el => io.observe(el));
+const io2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); } }), { threshold: .3 });
+io2.observe(document.getElementById('fin'));
+
+// Árbol de luces: ramas que se ramifican y ~220 luces cálidas
+const tree = document.getElementById('tree'), NS = 'http://www.w3.org/2000/svg';
+const mk = (t, a, par) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); (par || tree).appendChild(e); return e; };
+let s = 11; const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+const bg = mk('g'), lg = mk('g', { class: 'gl' }); const L = [];
+mk('path', { d: 'M230 497Q400 484 570 497', class: 'br', 'stroke-width': 3 }, bg);
+const DEPTH = 7;
+(function grow(x, y, a, len, d, w) {
+  const x2 = x + Math.cos(a) * len, y2 = y - Math.sin(a) * len, off = (r() - .5) * len * .3;
+  const cx = (x + x2) / 2 - Math.sin(a) * off, cy = (y + y2) / 2 - Math.cos(a) * off;
+  mk('path', { d: `M${x.toFixed(1)} ${y.toFixed(1)}Q${cx.toFixed(1)} ${cy.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}`, class: 'br', 'stroke-width': Math.max(w, .9).toFixed(1) }, bg);
+  if (d <= 2) { const t = .55 + r() * .45, u = 1 - t; L.push([u*u*x + 2*u*t*cx + t*t*x2, u*u*y + 2*u*t*cy + t*t*y2]); }
+  if (d === 0) return;
+  const k = d >= DEPTH - 1 ? 3 : 2;
+  for (let i = 0; i < k; i++) {
+    const spread = k === 3 ? (i - 1) * .6 : (i ? .42 : -.42);
+    grow(x2, y2, a + spread + (r() - .5) * .35, len * (.72 + r() * .1), d - 1, w * .66);
+  }
+})(400, 496, Math.PI / 2, 98, DEPTH, 15);
+L.forEach((p, i) => {
+  mk('circle', { cx: (p[0] + (r() - .5) * 9).toFixed(1), cy: (p[1] + (r() - .5) * 9).toFixed(1), r: (1.5 + r() * 1.8).toFixed(1),
+    class: 'lt1' + (i % 3 === 0 ? ' p' : ''), fill: r() > .5 ? '#ffe9a8' : '#ffd77a', style: `--d:${i}` }, lg);
+});
+// Letras que aparecen y corona de enredaderas alrededor de la frase final
+(function () {
+  const fb = document.getElementById('fb'), txt = fb.textContent; fb.setAttribute('aria-label', txt); fb.textContent = '';
+  let i = 0;
+  txt.split(' ').forEach((w, k, arr) => {
+    const ws = document.createElement('span'); ws.className = 'w'; ws.setAttribute('aria-hidden', 'true');
+    [...w].forEach(ch => { const l = document.createElement('span'); l.className = 'l'; l.style.setProperty('--i', i++); l.textContent = ch; ws.appendChild(l); });
+    fb.appendChild(ws);
+    if (k < arr.length - 1) { fb.appendChild(document.createTextNode(' ')); i++; }
+  });
+  const sv = document.getElementById('wr'), C = 300, R = 252, SW = 190 * Math.PI / 180, N = 180;
+  [[1, 0], [-1, Math.PI / 2]].forEach(([dir, ph]) => {
+    const P = []; let d = '';
+    for (let k = 0; k <= N; k++) {
+      const t = k / N, th = Math.PI / 2 + dir * SW * t, rr = R + 16 * Math.sin(t * Math.PI * 9 + ph);
+      const x = C + rr * Math.cos(th), y = C + rr * Math.sin(th); P.push([x, y, t]);
+      d += (k ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1);
+    }
+    mk('path', { d, class: 'vn', pathLength: 1 }, sv);
+    for (let k = 2; k < N; k += 4) {
+      const [x, y, t] = P[k], q = P[k + 1], ang = Math.atan2(q[1] - y, q[0] - x) * 180 / Math.PI + (k % 8 ? 58 : -58);
+      mk('path', { d: 'M0 0C5-8 15-8 20 0C15 8 5 8 0 0z', class: 'lf', transform: `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${ang.toFixed(0)}) scale(${(.9 + r() * .5).toFixed(2)})`, style: `--t:${t.toFixed(3)}` }, sv);
+      if (k % 20 === 6) mk('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r: 2.6, class: 'lf bd', style: `--t:${t.toFixed(3)}` }, sv);
+    }
+  });
+})();
+// Música: empieza con el primer toque, botón para pausar, baja al llegar al final
+(function () {
+  const au = document.getElementById('au'), bt = document.getElementById('snd'), lb = document.getElementById('sl');
+  const VOL = .55; let manual = false, fade = null;
+  const ui = () => { const on = !au.paused; bt.classList.toggle('on', on); bt.setAttribute('aria-pressed', on); lb.textContent = on ? 'PAUSAR MÚSICA' : 'ACTIVAR MÚSICA'; bt.setAttribute('aria-label', on ? 'Pausar música' : 'Activar música'); };
+  const to = v => { clearInterval(fade); fade = setInterval(() => { const d = v - au.volume; if (Math.abs(d) < .02) { au.volume = v; clearInterval(fade); } else au.volume = Math.min(1, Math.max(0, au.volume + Math.sign(d) * .02)); }, 60); };
+  const play = () => { au.volume = 0; const p = au.play(); if (p && p.then) p.then(() => { to(tgt); ui(); }).catch(ui); };
+  let tgt = VOL;
+  ['pointerdown', 'keydown', 'touchend'].forEach(e => addEventListener(e, () => { if (!manual && au.paused) play(); }, { once: false, passive: true }));
+  bt.addEventListener('click', ev => { ev.stopPropagation(); manual = true; if (au.paused) play(); else { au.pause(); ui(); } });
+  au.addEventListener('pause', ui); au.addEventListener('play', ui);
+  if (!reduce) play();
+  new IntersectionObserver(es => es.forEach(e => { tgt = e.isIntersecting ? .22 : VOL; if (!au.paused) to(tgt); }), { threshold: .15 }).observe(document.querySelector('.end'));
+})();
+</script>
+</body>
+</html>
